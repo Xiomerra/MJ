@@ -6,6 +6,8 @@
    >File created on 1/13/15
 */
 
+#‌include <string>
+
 class Tile
 {
 public:
@@ -40,7 +42,7 @@ public:
     bool isDragon();
 
     //return a string representing the tile value
-    string toString();
+    std::string toString();
  protected:
     tile_suit suit;         //the suit of the tile
     int value;              //the value of the tile within its suit (i.e. 4 for 4 pin, 1 for east wind)
