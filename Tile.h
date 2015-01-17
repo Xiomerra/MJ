@@ -33,10 +33,6 @@ public:
     int getId();
 
     bool isSuit(tile_suit suit);
-    bool isSou();
-    bool isMan();
-    bool isPin();
-
     bool isSimple();
     bool isTerminal();
     bool isHonor();
