@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XMJ", "XMJ.vcxproj", "{DCCF7C27-C137-4C13-B7C3-0A07AA913317}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		XMJClient|Win32 = XMJClient|Win32
+		XMJClientDebug|Win32 = XMJClientDebug|Win32
+		XMJServer|Win32 = XMJServer|Win32
+		XMJServerDebug|Win32 = XMJServerDebug|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCCF7C27-C137-4C13-B7C3-0A07AA913317}.XMJClient|Win32.ActiveCfg = XMJClient|Win32
+		{DCCF7C27-C137-4C13-B7C3-0A07AA913317}.XMJClient|Win32.Build.0 = XMJClient|Win32
+		{DCCF7C27-C137-4C13-B7C3-0A07AA913317}.XMJClientDebug|Win32.ActiveCfg = XMJClientDebug|Win32
+		{DCCF7C27-C137-4C13-B7C3-0A07AA913317}.XMJClientDebug|Win32.Build.0 = XMJClientDebug|Win32
+		{DCCF7C27-C137-4C13-B7C3-0A07AA913317}.XMJServer|Win32.ActiveCfg = XMJServer|Win32
+		{DCCF7C27-C137-4C13-B7C3-0A07AA913317}.XMJServer|Win32.Build.0 = XMJServer|Win32
+		{DCCF7C27-C137-4C13-B7C3-0A07AA913317}.XMJServerDebug|Win32.ActiveCfg = XMJServerDebug|Win32
+		{DCCF7C27-C137-4C13-B7C3-0A07AA913317}.XMJServerDebug|Win32.Build.0 = XMJServerDebug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
