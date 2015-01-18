@@ -1,10 +1,11 @@
 #include "Tile.h"
 
-Tile::Tile(tile_suit suit, int val, int id)
+Tile::Tile(Suit suit, int val, int id, bool isDora)
 {
 	this->suit = suit;
 	this->value = val;
 	this->id = id;
+	dora = isDora;
 }
 
 Tile::~Tile()
@@ -13,7 +14,7 @@ Tile::~Tile()
 
 
 //general accessors
-Tile::tile_suit Tile::getSuit()
+Suit Tile::getSuit()
 {
 	return suit;
 }
@@ -29,7 +30,7 @@ int Tile::getId()
 }
 
 //checkers (different name?)
-bool Tile::isSuit(tile_suit testSuit)
+bool Tile::isSuit(Suit testSuit)
 {
 	return suit == testSuit;
 }
@@ -56,12 +57,18 @@ bool Tile::isHonor()
 
 bool Tile::isWind()
 {
-	return (suit == tile_suit::wind);
+	return (suit == Suit::wind);
 }
 
 bool Tile::isDragon()
 {
-	return (suit == tile_suit::dragon);
+	return (suit == Suit::dragon);
+}
+
+
+void Tile::makeDora()
+{
+	dora = true;
 }
 
 //other
@@ -72,16 +79,16 @@ std::string Tile::toString()
 	//determine the suit first
 	switch(suit)
 	{
-	case tile_suit::pin:
+	case Suit::pin:
 		s += "p";
 		break;
-	case tile_suit::man:
+	case Suit::man:
 		s += "m";
 		break;
-	case tile_suit::sou:
+	case Suit::sou:
 		s += "s";
 		break;
-	case tile_suit::wind:
+	case Suit::wind:
 		switch(value)
 		{
 		case 1:
@@ -96,7 +103,7 @@ std::string Tile::toString()
 			return "[invalid]";
 		}
 		break;
-	case tile_suit::dragon:
+	case Suit::dragon:
 		switch(value)
 		{
 		case 1:
