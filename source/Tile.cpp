@@ -1,11 +1,16 @@
 #include "Tile.h"
 
-Tile::Tile(Suit suit, int val, int id, bool isDora)
+Tile::Tile(Suit suit, int val, int id, bool isDora, bool isRedFive)
 {
 	this->suit = suit;
 	this->value = val;
 	this->id = id;
 	dora = isDora;
+	redFive = isRedFive;
+	if (isRedFive &&  !isDora)
+	{
+		cout << "warning: red five, but not dora, are you sure?" << endl;
+	}
 }
 
 Tile::~Tile()
@@ -65,6 +70,15 @@ bool Tile::isDragon()
 	return (suit == Suit::dragon);
 }
 
+bool Tile::isDora()
+{
+	return dora;
+}
+
+bool Tile::isRedFive()
+{
+	return redFive;
+}
 
 void Tile::makeDora()
 {
